@@ -1,0 +1,12 @@
+io.flutter.plugins.deviceinfo.device_info-jetified-window-1.0.0-beta04-0 C:\Users\POS\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\res
+io.flutter.plugins.deviceinfo.device_info-jetified-window-java-1.0.0-beta04-1 C:\Users\POS\.gradle\caches\transforms-3\142c24f2530665bb6deb4123ab140714\transformed\jetified-window-java-1.0.0-beta04\res
+io.flutter.plugins.deviceinfo.device_info-core-1.6.0-2 C:\Users\POS\.gradle\caches\transforms-3\2579a7de00054bf46a8dbc332552f622\transformed\core-1.6.0\res
+io.flutter.plugins.deviceinfo.device_info-jetified-annotation-experimental-1.1.0-3 C:\Users\POS\.gradle\caches\transforms-3\3f96ca76068ab400b494bc7d541ee256\transformed\jetified-annotation-experimental-1.1.0\res
+io.flutter.plugins.deviceinfo.device_info-main-4 C:\Users\POS\AppData\Local\Pub\Cache\hosted\pub.dev\device_info-2.0.3\android\src\main\res
+io.flutter.plugins.deviceinfo.device_info-release-5 C:\Users\POS\AppData\Local\Pub\Cache\hosted\pub.dev\device_info-2.0.3\android\src\release\res
+io.flutter.plugins.deviceinfo.device_info-pngs-6 C:\Users\POS\Desktop\devtool\build\device_info\generated\res\pngs\release
+io.flutter.plugins.deviceinfo.device_info-resValues-7 C:\Users\POS\Desktop\devtool\build\device_info\generated\res\resValues\release
+io.flutter.plugins.deviceinfo.device_info-rs-8 C:\Users\POS\Desktop\devtool\build\device_info\generated\res\rs\release
+io.flutter.plugins.deviceinfo.device_info-mergeReleaseResources-9 C:\Users\POS\Desktop\devtool\build\device_info\intermediates\incremental\release\mergeReleaseResources\merged.dir
+io.flutter.plugins.deviceinfo.device_info-mergeReleaseResources-10 C:\Users\POS\Desktop\devtool\build\device_info\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+io.flutter.plugins.deviceinfo.device_info-merged_res-11 C:\Users\POS\Desktop\devtool\build\device_info\intermediates\merged_res\release
