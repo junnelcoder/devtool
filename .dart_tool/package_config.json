@@ -92,14 +92,14 @@
       "languageVersion": "3.1"
     },
     {
-      "name": "device_info",
-      "rootUri": "file:///C:/Users/POS/AppData/Local/Pub/Cache/hosted/pub.dev/device_info-2.0.3",
+      "name": "device_info_plus",
+      "rootUri": "file:///C:/Users/POS/AppData/Local/Pub/Cache/hosted/pub.dev/device_info_plus-10.1.0",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "3.3"
     },
     {
-      "name": "device_info_platform_interface",
-      "rootUri": "file:///C:/Users/POS/AppData/Local/Pub/Cache/hosted/pub.dev/device_info_platform_interface-2.0.1",
+      "name": "device_info_plus_platform_interface",
+      "rootUri": "file:///C:/Users/POS/AppData/Local/Pub/Cache/hosted/pub.dev/device_info_plus_platform_interface-7.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -386,6 +386,12 @@
       "languageVersion": "3.3"
     },
     {
+      "name": "win32_registry",
+      "rootUri": "file:///C:/Users/POS/AppData/Local/Pub/Cache/hosted/pub.dev/win32_registry-1.1.3",
+      "packageUri": "lib/",
+      "languageVersion": "3.3"
+    },
+    {
       "name": "xdg_directories",
       "rootUri": "file:///C:/Users/POS/AppData/Local/Pub/Cache/hosted/pub.dev/xdg_directories-1.0.4",
       "packageUri": "lib/",
@@ -410,7 +416,7 @@
       "languageVersion": "3.3"
     }
   ],
-  "generated": "2024-05-14T08:57:48.602366Z",
+  "generated": "2024-05-18T02:34:09.510640Z",
   "generator": "pub",
   "generatorVersion": "3.3.1"
 }

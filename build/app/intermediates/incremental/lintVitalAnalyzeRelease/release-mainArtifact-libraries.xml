@@ -17,19 +17,6 @@
       externalAnnotations="annotations.zip"
       proguardRules="proguard.txt"/>
   <library
-      name="C:\Users\POS\Desktop\devtool\android@@:device_info::release"
-      jars="C:\Users\POS\Desktop\devtool\build\device_info\.transforms\08b807bfb997e245c3a7da737890c384\transformed\out\jars\classes.jar;C:\Users\POS\Desktop\devtool\build\device_info\.transforms\08b807bfb997e245c3a7da737890c384\transformed\out\jars\libs\R.jar"
-      resolved="io.flutter.plugins.deviceinfo:device_info:unspecified"
-      folder="C:\Users\POS\Desktop\devtool\build\device_info\.transforms\08b807bfb997e245c3a7da737890c384\transformed\out"
-      manifest="AndroidManifest.xml"
-      resFolder="res"
-      assetsFolder="assets"
-      lintJar="lint.jar"
-      publicResources="public.txt"
-      symbolFile="R.txt"
-      externalAnnotations="annotations.zip"
-      proguardRules="proguard.txt"/>
-  <library
       name="C:\Users\POS\Desktop\devtool\android@@:connectivity::release"
       jars="C:\Users\POS\Desktop\devtool\build\connectivity\.transforms\5ca235d5c801f36c274eb60e19a46faf\transformed\out\jars\classes.jar;C:\Users\POS\Desktop\devtool\build\connectivity\.transforms\5ca235d5c801f36c274eb60e19a46faf\transformed\out\jars\libs\R.jar"
       resolved="io.flutter.plugins.connectivity:connectivity:unspecified"
@@ -47,6 +34,19 @@
       jars="C:\Users\POS\Desktop\devtool\build\fluttertoast\.transforms\724ec8b2272394f7b74c3ffb5b628eff\transformed\out\jars\classes.jar;C:\Users\POS\Desktop\devtool\build\fluttertoast\.transforms\724ec8b2272394f7b74c3ffb5b628eff\transformed\out\jars\libs\R.jar"
       resolved="com.example.FlutterToast:fluttertoast:unspecified"
       folder="C:\Users\POS\Desktop\devtool\build\fluttertoast\.transforms\724ec8b2272394f7b74c3ffb5b628eff\transformed\out"
+      manifest="AndroidManifest.xml"
+      resFolder="res"
+      assetsFolder="assets"
+      lintJar="lint.jar"
+      publicResources="public.txt"
+      symbolFile="R.txt"
+      externalAnnotations="annotations.zip"
+      proguardRules="proguard.txt"/>
+  <library
+      name="C:\Users\POS\Desktop\devtool\android@@:device_info_plus::release"
+      jars="C:\Users\POS\Desktop\devtool\build\device_info_plus\.transforms\9d35aff06f3c23fd555a56eb4729c584\transformed\out\jars\classes.jar;C:\Users\POS\Desktop\devtool\build\device_info_plus\.transforms\9d35aff06f3c23fd555a56eb4729c584\transformed\out\jars\libs\R.jar"
+      resolved="dev.fluttercommunity.plus.device_info:device_info_plus:unspecified"
+      folder="C:\Users\POS\Desktop\devtool\build\device_info_plus\.transforms\9d35aff06f3c23fd555a56eb4729c584\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"
@@ -329,13 +329,13 @@
       jars="C:\Users\POS\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jdk7\1.7.10\1ef73fee66f45d52c67e2aca12fd945dbe0659bf\kotlin-stdlib-jdk7-1.7.10.jar"
       resolved="org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.7.10"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib:1.7.10@jar"
-      jars="C:\Users\POS\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.7.10\d2abf9e77736acc4450dc4a3f707fa2c10f5099d\kotlin-stdlib-1.7.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.7.10"/>
+      name="org.jetbrains.kotlin:kotlin-stdlib:1.7.22@jar"
+      jars="C:\Users\POS\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.7.22\9fb43bccb6cf8cfaaf3776c75f5df4f052f09b72\kotlin-stdlib-1.7.22.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib:1.7.22"/>
   <library
-      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10@jar"
-      jars="C:\Users\POS\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.7.10\bac80c520d0a9e3f3673bc2658c6ed02ef45a76a\kotlin-stdlib-common-1.7.10.jar"
-      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.10"/>
+      name="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.22@jar"
+      jars="C:\Users\POS\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-common\1.7.22\5dd2c9dcf64c94b46cf4bdb6fa4035b9bb726e2e\kotlin-stdlib-common-1.7.22.jar"
+      resolved="org.jetbrains.kotlin:kotlin-stdlib-common:1.7.22"/>
   <library
       name="org.jetbrains:annotations:13.0@jar"
       jars="C:\Users\POS\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"

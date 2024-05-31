@@ -2007,6 +2007,18 @@ com.example.devtool.R$string
 com.example.devtool.R$style
 com.example.devtool.R$styleable
 com.example.devtool.R
+dev.fluttercommunity.plus.device_info.BuildConfig
+dev.fluttercommunity.plus.device_info.R$attr
+dev.fluttercommunity.plus.device_info.R$color
+dev.fluttercommunity.plus.device_info.R$dimen
+dev.fluttercommunity.plus.device_info.R$drawable
+dev.fluttercommunity.plus.device_info.R$id
+dev.fluttercommunity.plus.device_info.R$integer
+dev.fluttercommunity.plus.device_info.R$layout
+dev.fluttercommunity.plus.device_info.R$string
+dev.fluttercommunity.plus.device_info.R$style
+dev.fluttercommunity.plus.device_info.R$styleable
+dev.fluttercommunity.plus.device_info.R
 io.flutter.BuildConfig
 io.flutter.FlutterInjector$Builder:
     public io.flutter.FlutterInjector$Builder setDeferredComponentManager(io.flutter.embedding.engine.deferredcomponents.DeferredComponentManager)
@@ -2610,21 +2622,6 @@ io.flutter.plugins.connectivity.R$string
 io.flutter.plugins.connectivity.R$style
 io.flutter.plugins.connectivity.R$styleable
 io.flutter.plugins.connectivity.R
-io.flutter.plugins.deviceinfo.BuildConfig
-io.flutter.plugins.deviceinfo.DeviceInfoPlugin:
-    static final java.lang.String TAG
-    public static void registerWith(io.flutter.plugin.common.PluginRegistry$Registrar)
-io.flutter.plugins.deviceinfo.R$attr
-io.flutter.plugins.deviceinfo.R$color
-io.flutter.plugins.deviceinfo.R$dimen
-io.flutter.plugins.deviceinfo.R$drawable
-io.flutter.plugins.deviceinfo.R$id
-io.flutter.plugins.deviceinfo.R$integer
-io.flutter.plugins.deviceinfo.R$layout
-io.flutter.plugins.deviceinfo.R$string
-io.flutter.plugins.deviceinfo.R$style
-io.flutter.plugins.deviceinfo.R$styleable
-io.flutter.plugins.deviceinfo.R
 io.flutter.plugins.sharedpreferences.BuildConfig
 io.flutter.plugins.sharedpreferences.Messages$FlutterError:
     public void <init>(java.lang.String,java.lang.String,java.lang.Object)
@@ -6341,11 +6338,15 @@ kotlin.ranges.ClosedFloatingPointRange$DefaultImpls
 kotlin.ranges.ClosedFloatingPointRange
 kotlin.ranges.ClosedRange$DefaultImpls
 kotlin.ranges.ClosedRange
+kotlin.ranges.ComparableOpenEndRange
 kotlin.ranges.ComparableRange
 kotlin.ranges.IntProgressionIterator:
     public final int getStep()
 kotlin.ranges.IntRange:
     public synthetic bridge boolean contains(java.lang.Comparable)
+    public synthetic bridge java.lang.Comparable getEndExclusive()
+    public java.lang.Integer getEndExclusive()
+    public static synthetic void getEndExclusive$annotations()
     public synthetic bridge java.lang.Comparable getEndInclusive()
     public synthetic bridge java.lang.Comparable getStart()
 kotlin.ranges.LongProgression$Companion
@@ -6353,15 +6354,23 @@ kotlin.ranges.LongProgression
 kotlin.ranges.LongProgressionIterator
 kotlin.ranges.LongRange$Companion
 kotlin.ranges.LongRange
+kotlin.ranges.OpenEndDoubleRange
+kotlin.ranges.OpenEndFloatRange
+kotlin.ranges.OpenEndRange$DefaultImpls
+kotlin.ranges.OpenEndRange
 kotlin.ranges.RangesKt:
     private void <init>()
 kotlin.ranges.RangesKt__RangesKt:
     public void <init>()
     public static final void checkStepIsPositive(boolean,java.lang.Number)
-    private static final boolean contains(java.lang.Iterable,java.lang.Object)
+    private static final boolean contains(kotlin.ranges.ClosedRange,java.lang.Object)
+    private static final boolean contains(kotlin.ranges.OpenEndRange,java.lang.Object)
     public static final kotlin.ranges.ClosedFloatingPointRange rangeTo(double,double)
     public static final kotlin.ranges.ClosedFloatingPointRange rangeTo(float,float)
     public static final kotlin.ranges.ClosedRange rangeTo(java.lang.Comparable,java.lang.Comparable)
+    public static final kotlin.ranges.OpenEndRange rangeUntil(double,double)
+    public static final kotlin.ranges.OpenEndRange rangeUntil(float,float)
+    public static final kotlin.ranges.OpenEndRange rangeUntil(java.lang.Comparable,java.lang.Comparable)
 kotlin.ranges.RangesKt___RangesKt:
     public void <init>()
     public static final synthetic boolean byteRangeContains(kotlin.ranges.ClosedRange,double)
@@ -6369,6 +6378,9 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final boolean byteRangeContains(kotlin.ranges.ClosedRange,int)
     public static final boolean byteRangeContains(kotlin.ranges.ClosedRange,long)
     public static final boolean byteRangeContains(kotlin.ranges.ClosedRange,short)
+    public static final boolean byteRangeContains(kotlin.ranges.OpenEndRange,int)
+    public static final boolean byteRangeContains(kotlin.ranges.OpenEndRange,long)
+    public static final boolean byteRangeContains(kotlin.ranges.OpenEndRange,short)
     public static final byte coerceAtLeast(byte,byte)
     public static final double coerceAtLeast(double,double)
     public static final float coerceAtLeast(float,float)
@@ -6390,13 +6402,20 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final java.lang.Comparable coerceIn(java.lang.Comparable,kotlin.ranges.ClosedRange)
     public static final short coerceIn(short,short,short)
     private static final boolean contains(kotlin.ranges.CharRange,java.lang.Character)
+    private static final boolean contains(kotlin.ranges.IntRange,byte)
+    private static final boolean contains(kotlin.ranges.IntRange,long)
     private static final boolean contains(kotlin.ranges.IntRange,java.lang.Integer)
+    private static final boolean contains(kotlin.ranges.IntRange,short)
+    private static final boolean contains(kotlin.ranges.LongRange,byte)
+    private static final boolean contains(kotlin.ranges.LongRange,int)
     private static final boolean contains(kotlin.ranges.LongRange,java.lang.Long)
+    private static final boolean contains(kotlin.ranges.LongRange,short)
     public static final synthetic boolean doubleRangeContains(kotlin.ranges.ClosedRange,byte)
     public static final boolean doubleRangeContains(kotlin.ranges.ClosedRange,float)
     public static final synthetic boolean doubleRangeContains(kotlin.ranges.ClosedRange,int)
     public static final synthetic boolean doubleRangeContains(kotlin.ranges.ClosedRange,long)
     public static final synthetic boolean doubleRangeContains(kotlin.ranges.ClosedRange,short)
+    public static final boolean doubleRangeContains(kotlin.ranges.OpenEndRange,float)
     public static final kotlin.ranges.CharProgression downTo(char,char)
     public static final kotlin.ranges.IntProgression downTo(byte,byte)
     public static final kotlin.ranges.IntProgression downTo(byte,int)
@@ -6429,6 +6448,9 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final synthetic boolean intRangeContains(kotlin.ranges.ClosedRange,float)
     public static final boolean intRangeContains(kotlin.ranges.ClosedRange,long)
     public static final boolean intRangeContains(kotlin.ranges.ClosedRange,short)
+    public static final boolean intRangeContains(kotlin.ranges.OpenEndRange,byte)
+    public static final boolean intRangeContains(kotlin.ranges.OpenEndRange,long)
+    public static final boolean intRangeContains(kotlin.ranges.OpenEndRange,short)
     public static final char last(kotlin.ranges.CharProgression)
     public static final int last(kotlin.ranges.IntProgression)
     public static final long last(kotlin.ranges.LongProgression)
@@ -6440,6 +6462,9 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final synthetic boolean longRangeContains(kotlin.ranges.ClosedRange,float)
     public static final boolean longRangeContains(kotlin.ranges.ClosedRange,int)
     public static final boolean longRangeContains(kotlin.ranges.ClosedRange,short)
+    public static final boolean longRangeContains(kotlin.ranges.OpenEndRange,byte)
+    public static final boolean longRangeContains(kotlin.ranges.OpenEndRange,int)
+    public static final boolean longRangeContains(kotlin.ranges.OpenEndRange,short)
     private static final char random(kotlin.ranges.CharRange)
     public static final char random(kotlin.ranges.CharRange,kotlin.random.Random)
     private static final int random(kotlin.ranges.IntRange)
@@ -6452,6 +6477,23 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final java.lang.Integer randomOrNull(kotlin.ranges.IntRange,kotlin.random.Random)
     private static final java.lang.Long randomOrNull(kotlin.ranges.LongRange)
     public static final java.lang.Long randomOrNull(kotlin.ranges.LongRange,kotlin.random.Random)
+    private static final kotlin.ranges.CharRange rangeUntil(char,char)
+    private static final kotlin.ranges.IntRange rangeUntil(byte,byte)
+    private static final kotlin.ranges.IntRange rangeUntil(byte,int)
+    private static final kotlin.ranges.IntRange rangeUntil(byte,short)
+    private static final kotlin.ranges.IntRange rangeUntil(int,byte)
+    private static final kotlin.ranges.IntRange rangeUntil(int,int)
+    private static final kotlin.ranges.IntRange rangeUntil(int,short)
+    private static final kotlin.ranges.IntRange rangeUntil(short,byte)
+    private static final kotlin.ranges.IntRange rangeUntil(short,int)
+    private static final kotlin.ranges.IntRange rangeUntil(short,short)
+    private static final kotlin.ranges.LongRange rangeUntil(byte,long)
+    private static final kotlin.ranges.LongRange rangeUntil(int,long)
+    private static final kotlin.ranges.LongRange rangeUntil(long,byte)
+    private static final kotlin.ranges.LongRange rangeUntil(long,int)
+    private static final kotlin.ranges.LongRange rangeUntil(long,long)
+    private static final kotlin.ranges.LongRange rangeUntil(long,short)
+    private static final kotlin.ranges.LongRange rangeUntil(short,long)
     public static final kotlin.ranges.CharProgression reversed(kotlin.ranges.CharProgression)
     public static final kotlin.ranges.IntProgression reversed(kotlin.ranges.IntProgression)
     public static final kotlin.ranges.LongProgression reversed(kotlin.ranges.LongProgression)
@@ -6460,6 +6502,9 @@ kotlin.ranges.RangesKt___RangesKt:
     public static final synthetic boolean shortRangeContains(kotlin.ranges.ClosedRange,float)
     public static final boolean shortRangeContains(kotlin.ranges.ClosedRange,int)
     public static final boolean shortRangeContains(kotlin.ranges.ClosedRange,long)
+    public static final boolean shortRangeContains(kotlin.ranges.OpenEndRange,byte)
+    public static final boolean shortRangeContains(kotlin.ranges.OpenEndRange,int)
+    public static final boolean shortRangeContains(kotlin.ranges.OpenEndRange,long)
     public static final kotlin.ranges.CharProgression step(kotlin.ranges.CharProgression,int)
     public static final kotlin.ranges.IntProgression step(kotlin.ranges.IntProgression,int)
     public static final kotlin.ranges.LongProgression step(kotlin.ranges.LongProgression,long)

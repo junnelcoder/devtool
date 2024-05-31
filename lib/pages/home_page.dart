@@ -1,6 +1,7 @@
+// ignore_for_file: unused_local_variable
 
 import 'package:flutter/material.dart';
-import 'package:device_info/device_info.dart';
+import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:encrypt/encrypt.dart' as encrypt;
@@ -61,38 +62,38 @@ class _HomePageState extends State<HomePage> {
 
     if (Theme.of(context).platform == TargetPlatform.iOS) {
       var iosDeviceInfo = await deviceInfoPlugin.iosInfo;
-      deviceId = iosDeviceInfo.identifierForVendor; // Unique ID on iOS
+      deviceId = iosDeviceInfo.identifierForVendor ?? 'Unknown iOS ID'; // Unique ID on iOS
     } else {
       var androidDeviceInfo = await deviceInfoPlugin.androidInfo;
-      deviceId = androidDeviceInfo.androidId; // Unique ID on Android
+      deviceId = androidDeviceInfo.id ?? 'Unknown Android ID'; // Unique ID on Android
     }
 
     return deviceId;
   }
 
   String _encryptFernet(String plainText) {
-  final keyBytes = utf8.encode(_encryptionKey); // Convert key to bytes
-  final key = encrypt.Key(keyBytes);
-  final iv = encrypt.IV.fromLength(16);
-  final encrypter = encrypt.Encrypter(encrypt.Fernet(key));
-  final encrypted = encrypter.encrypt(plainText);
-  return encrypted.base64;
-}
+    final keyBytes = utf8.encode(_encryptionKey); // Convert key to bytes
+    final key = encrypt.Key(keyBytes);
+    final iv = encrypt.IV.fromLength(16);
+    final encrypter = encrypt.Encrypter(encrypt.Fernet(key));
+    final encrypted = encrypter.encrypt(plainText);
+    return encrypted.base64;
+  }
 
   String _decryptFernet(String encryptedDeviceId) {
-  final keyBytes = utf8.encode(_encryptionKey); // Convert key to bytes
-  final key = encrypt.Key(keyBytes);
-  final iv = encrypt.IV.fromLength(16);
-  final encrypter = encrypt.Encrypter(encrypt.Fernet(key));
+    final keyBytes = utf8.encode(_encryptionKey); // Convert key to bytes
+    final key = encrypt.Key(keyBytes);
+    final iv = encrypt.IV.fromLength(16);
+    final encrypter = encrypt.Encrypter(encrypt.Fernet(key));
   
-  // Add padding to the encrypted value if needed
-  final paddedEncryptedDeviceId = encryptedDeviceId.padRight(
-    (encryptedDeviceId.length + 3) & ~3,
-    '=');
+    // Add padding to the encrypted value if needed
+    final paddedEncryptedDeviceId = encryptedDeviceId.padRight(
+      (encryptedDeviceId.length + 3) & ~3,
+      '=');
   
-  final decrypted = encrypter.decrypt64(paddedEncryptedDeviceId);
-  return decrypted;
-}
+    final decrypted = encrypter.decrypt64(paddedEncryptedDeviceId);
+    return decrypted;
+  }
 
   @override
   Widget build(BuildContext context) {
